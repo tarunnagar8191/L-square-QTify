@@ -63,7 +63,7 @@ const SearchBar = ({ className, data }) => {
       <div className={className}>
         <input
           type="search"
-          placeholder="search"
+          placeholder="search a song"
           required
           value={values}
           onChange={handleChange}

@@ -53,7 +53,7 @@ export default function Search1({ className, data }) {
               }}
               value={values}
               onChange={handleChange}
-              placeholder="search"
+              placeholder="search a song"
             />
           )}
           onKeyDown={(event) => {
