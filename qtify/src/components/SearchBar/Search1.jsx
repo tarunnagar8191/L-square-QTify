@@ -1,8 +1,8 @@
-import { Autocomplete, TextField } from '@mui/material';
-import React, { useState } from 'react';
-import './SearchBar.css';
-import { Search } from '@mui/icons-material';
-import MenuItem from '../MenuItem/MenuItem';
+import { Autocomplete, TextField } from "@mui/material";
+import React, { useState } from "react";
+import "./SearchBar.css";
+import { Search } from "@mui/icons-material";
+import MenuItem from "../MenuItem/MenuItem";
 
 export default function Search1({ className, data }) {
   const [values, setValues] = useState(null);
@@ -49,15 +49,15 @@ export default function Search1({ className, data }) {
               label="Search an album of your choice"
               InputProps={{
                 ...params.InputProps,
-                type: 'search',
+                type: "search",
               }}
               value={values}
-              placeholder='Search'
               onChange={handleChange}
+              placeholder="search"
             />
           )}
           onKeyDown={(event) => {
-            if (event.key === 'Enter') {
+            if (event.key === "Enter") {
               event.defaultMuiPrevented = true;
             }
           }}

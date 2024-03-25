@@ -35,13 +35,13 @@
 
 // export default SearchBar;
 
-import { Search } from '@mui/icons-material';
-import './SearchBar.css';
-import { useState } from 'react';
-import MenuItem from '../MenuItem/MenuItem';
+import { Search } from "@mui/icons-material";
+import "./SearchBar.css";
+import { useState } from "react";
+import MenuItem from "../MenuItem/MenuItem";
 
 const SearchBar = ({ className, data }) => {
-  const [values, setValues] = useState('');
+  const [values, setValues] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -63,7 +63,7 @@ const SearchBar = ({ className, data }) => {
       <div className={className}>
         <input
           type="search"
-          placeholder="Search an album of your choice"
+          placeholder="search"
           required
           value={values}
           onChange={handleChange}
