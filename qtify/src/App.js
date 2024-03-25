@@ -50,14 +50,19 @@ const App = () => {
   return (
     <div>
       <NavBar data={dataTopAlbums} />
-      {/* <Header />
+      <Header />
       <GridSection title={"Top Albums"} data={dataTopAlbums} type={"album"} />
       <GridSection title={"New Albums "} data={dataNewAlbum} type={"album"} />
       <Line />
-      <GridSection title={"Songs "} data={dataSong} type={"song"} setDataSong={setDataSong} />
+      <GridSection
+        title={"Songs "}
+        data={dataSong}
+        type={"song"}
+        setDataSong={setDataSong}
+      />
       <FAQAccordion />
       <Line />
-      <MusicPlayer data={dataTopAlbums} /> */}
+      <MusicPlayer data={dataTopAlbums} />
     </div>
   );
 };
