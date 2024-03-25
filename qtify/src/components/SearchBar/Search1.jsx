@@ -52,6 +52,7 @@ export default function Search1({ className, data }) {
                 type: 'search',
               }}
               value={values}
+              placeholder='Search'
               onChange={handleChange}
             />
           )}
